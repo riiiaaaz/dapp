@@ -2,6 +2,12 @@ import { Request, Response } from "express";
 import {
   generateDublinWeatherData,
   generateLondonWeatherData,
+  generateDhakaWeatherData,
+  generateRomeWeatherData,
+  londonforecast,
+  dublinforecast,
+  dhakaforecast,
+  romeforecast
 } from "../services/weatherService.js";
 import { validationResult } from "express-validator";
 
@@ -36,6 +42,12 @@ export const getWeatherData = async (req: Request, res: Response) => {
       finalWeatherData = generateLondonWeatherData();
     } else if (city === "dublin") {
       finalWeatherData = generateDublinWeatherData();
+    }
+    else if (city === "dhaka") {
+      finalWeatherData = generateDhakaWeatherData();
+    }
+    else if (city === "rome") {
+      finalWeatherData = generateRomeWeatherData();
     } else {
       // If the city is not london or dublin, we will throw an error
       res.status(404).send("City not found");
@@ -48,3 +60,38 @@ export const getWeatherData = async (req: Request, res: Response) => {
     res.status(500).send("Error in fetching weather data");
   }
 };
+
+
+export const  getforecastData = async (req:Request,res:Response) =>
+{
+  try{
+    const {city}= req.params;
+    console.log(city);
+
+
+    let finalforecastData : forecast;
+
+    if(city==="london")
+    {
+      console.log(londonforecast());
+      finalforecastData = londonforecast();
+    }
+    else if (city === "dublin") {
+      console.log(dublinforecast());
+      finalforecastData = dublinforecast();
+    }
+    else if (city === "dhaka") {
+      console.log(dhakaforecast());
+      finalforecastData = dhakaforecast();
+    }
+    else if (city === "rome") {
+      console.log(romeforecast());
+      finalforecastData = romeforecast();
+    }else{
+    res.status(404).send ("city not foundd ")
+    } 
+
+   res.status(200).json(finalforecastData)
+ }
+ catch(error){res.status(500).send("Error in getting forecast data ")}
+}
