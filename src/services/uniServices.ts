@@ -3,8 +3,8 @@ import { faker } from "@faker-js/faker";
 export const generateUelData = (): UniversityData => {
   const generatedUniversityData: UniversityData = {
     name: "University of East London",
-    ranking: faker.number.int({ min: 1, max: 1000 }),
-    totalStudents: faker.number.int({ min: 1000, max: 20000 }),
+    ranking: faker.number.int({ min: 600, max: 800 }),
+    totalStudents: faker.number.int({ min: 10000, max: 30000 }),
     coursesTaught: faker.number.int({ min: 50, max: 200 }),
     totalLecturers: faker.number.int({ min: 50, max: 200 }),
     location: "london",
@@ -19,8 +19,8 @@ export const generateUelData = (): UniversityData => {
 export const generateHarvardData = (): UniversityData => {
     const generatedUniversityData: UniversityData = {
       name: "Harvard University",
-      ranking: faker.number.int({ min: 1, max: 1000 }),
-      totalStudents: faker.number.int({ min: 1000, max: 20000 }),
+      ranking: faker.number.int({ min: 1, max: 50 }),
+      totalStudents: faker.number.int({ min: 5000, max: 30000 }),
       coursesTaught: faker.number.int({ min: 50, max: 200 }),
       totalLecturers: faker.number.int({ min: 50, max: 200 }),
       location: "Cambridge",
@@ -35,8 +35,8 @@ export const generateHarvardData = (): UniversityData => {
   export const generateOxfordData = (): UniversityData => {
     const generatedUniversityData: UniversityData = {
       name: "University of Oxford",
-      ranking: faker.number.int({ min: 1, max: 1000 }),
-      totalStudents: faker.number.int({ min: 1000, max: 20000 }),
+      ranking: faker.number.int({ min: 1, max: 20 }),
+      totalStudents: faker.number.int({ min: 10000, max: 50000 }),
       coursesTaught: faker.number.int({ min: 50, max: 200 }),
       totalLecturers: faker.number.int({ min: 50, max: 200 }),
       location: "Oxford",
@@ -51,8 +51,8 @@ export const generateHarvardData = (): UniversityData => {
   export const generateMITData = (): UniversityData => {
     const generatedUniversityData: UniversityData = {
       name: "Massachusetts Institute of Technology",
-      ranking: faker.number.int({ min: 1, max: 1000 }),
-      totalStudents: faker.number.int({ min: 1000, max: 20000 }),
+      ranking: faker.number.int({ min: 1, max: 8 }),
+      totalStudents: faker.number.int({ min: 10000, max: 25000 }),
       coursesTaught: faker.number.int({ min: 50, max: 200 }),
       totalLecturers: faker.number.int({ min: 50, max: 200 }),
       location: "Cambridge",
@@ -67,8 +67,8 @@ export const generateHarvardData = (): UniversityData => {
   export const generateStanfordData = (): UniversityData => {
     const generatedUniversityData: UniversityData = {
       name: "Stanford University",
-      ranking: faker.number.int({ min: 1, max: 1000 }),
-      totalStudents: faker.number.int({ min: 1000, max: 20000 }),
+      ranking: faker.number.int({ min: 1, max: 60 }),
+      totalStudents: faker.number.int({ min: 10000, max: 40000 }),
       coursesTaught: faker.number.int({ min: 50, max: 200 }),
       totalLecturers: faker.number.int({ min: 50, max: 200 }),
       location: "Stanford",
@@ -83,8 +83,8 @@ export const generateHarvardData = (): UniversityData => {
   export const generateCambridgeData = (): UniversityData => {
     const generatedUniversityData: UniversityData = {
       name: "University of Cambridge",
-      ranking: faker.number.int({ min: 1, max: 1000 }),
-      totalStudents: faker.number.int({ min: 1000, max: 20000 }),
+      ranking: faker.number.int({ min: 1, max: 10 }),
+      totalStudents: faker.number.int({ min: 10000, max: 70000 }),
       coursesTaught: faker.number.int({ min: 50, max: 200 }),
       totalLecturers: faker.number.int({ min: 50, max: 200 }),
       location: "Cambridge",
