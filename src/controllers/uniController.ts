@@ -35,18 +35,23 @@ import { generateUelData,
         console.log(generateUelData());
         finaluniData = generateUelData();
       } else if (uni === "oxford") {
+        console.log(generateOxfordData());
         finaluniData = generateOxfordData();
       }
       else if (uni === "cambridge") {
+        console.log(generateOxfordData());
         finaluniData = generateCambridgeData();
       }
       else if (uni === "mit") {
+        console.log(generateMITData());
         finaluniData = generateMITData();
       }
       else if (uni === "stanford") {
+        console.log(generateMITData());
         finaluniData = generateStanfordData();
       } 
       else if (uni === "harvard") {
+        console.log(generateHarvardData());
         finaluniData = generateHarvardData();
       }else {
         // If the city is not london or dublin, we will throw an error
