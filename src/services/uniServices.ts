@@ -1,4 +1,5 @@
 import { faker } from "@faker-js/faker";
+import { storeUniData } from "../helpers/helper.js";
 
 export const generateUelData = (): UniversityData => {
   const generatedUniversityData: UniversityData = {
@@ -12,7 +13,7 @@ export const generateUelData = (): UniversityData => {
     website: faker.internet.url(), // a random website URL
     contactEmail: faker.internet.email(), // a random email address
   };
-
+  storeUniData(generatedUniversityData).catch(console.error);
   return generatedUniversityData;
 };
 
@@ -28,7 +29,7 @@ export const generateHarvardData = (): UniversityData => {
       website: faker.internet.url(),
       contactEmail: faker.internet.email(),
     };
-  
+    storeUniData(generatedUniversityData).catch(console.error);
     return generatedUniversityData;
   };
   
@@ -44,7 +45,7 @@ export const generateHarvardData = (): UniversityData => {
       website: faker.internet.url(),
       contactEmail: faker.internet.email(),
     };
-  
+    storeUniData(generatedUniversityData).catch(console.error);
     return generatedUniversityData;
   };
   
@@ -60,7 +61,7 @@ export const generateHarvardData = (): UniversityData => {
       website: faker.internet.url(),
       contactEmail: faker.internet.email(),
     };
-  
+    storeUniData(generatedUniversityData).catch(console.error);
     return generatedUniversityData;
   };
 
@@ -76,7 +77,7 @@ export const generateHarvardData = (): UniversityData => {
       website: faker.internet.url(),
       contactEmail: faker.internet.email(),
     };
-  
+    storeUniData(generatedUniversityData).catch(console.error);
     return generatedUniversityData;
   };
 
@@ -92,6 +93,6 @@ export const generateHarvardData = (): UniversityData => {
       website: faker.internet.url(),
       contactEmail: faker.internet.email(),
     };
-  
+    storeUniData(generatedUniversityData).catch(console.error);
     return generatedUniversityData;
   };
